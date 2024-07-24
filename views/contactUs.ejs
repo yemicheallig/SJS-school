@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saint Joseph School</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top bg-danger p-0 navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/index"><img id="MDB-logo" src="./assets/logo.jpg" width="60px"
+                        height="60px" style="border-radius: 50%;" alt="MDB Logo" draggable="false" height="30" /></a>
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto align-items-center text-light">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-light " href="/index"><i
+                                    class="fas fa-home pe-2"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-light" href="/blog"><i
+                                    class="fas fa-blog pe-2"></i>Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-light" href="aboutUs"><i
+                                    class="fas fa-info-circle pe-2"></i>About
+                                Us</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-primary active" href="./contactUs"><i
+                                    class="fas fa-envelope pe-2"></i>Contact
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-light" href="/comments">Comments
+                                </a>
+                        </li>
+                        <!--  <li class="nav-item ms-3">
+                    <a class="btn btn-black btn-rounded rounded-pill bg-primary text-light" href="#!">Be a Member</a>
+                </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="d-sm-flex flex-lg-row align-items-center p-sm-2 p-md-0 p-lg-5 flex-column" style="margin-top: 90px;">
+        <div class="col-lg">
+            <h2>Contact Us</h2>
+            <p>School Information</p>
+            <p><b>Address:</b> Addis Ababa, Ethiopia, Mesquel Square</p>
+            <p><b>Phone:</b> +251 11 551 0868</p>
+            <p><b>Email:</b> info@example.com</p>
+            <p><b>Telegram:</b> https://t.me/sjschoolgr9</p>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1229.6481763783306!2d38.76073676442655!3d9.00941414068018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85b8fbee5c05%3A0xdcd4da62cb92b558!2zU2FpbnQgSm9zZXBoIFNjaG9vbCB8IE1lc2tlbCBTcXVhcmUgfCDhiYXhi7HhiLUg4Yuu4Yi04Y2NIOGJtS_hiaThibUgfCDhiJjhiLXhiYDhiI0g4Yqg4Yuw4Ymj4Ymj4Yut!5e1!3m2!1sen!2set!4v1720463912882!5m2!1sen!2set"
+                    width='550' height="450" id="googlemap" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <style>
+            #googlemap {
+                border: 0;
+                max-width: 100% !important;
+            }
+        </style>
+
+        <div class="col-lg my-5 my-lg-0 p-4 row">
+            <h2>Contact Form</h2>
+            <form class="col" action="/contactUs" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </form>            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-danger text-light py-2 mt-5">
+        <section class="">
+            <div class="text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fa-solid fa-school"></i> St. Joseph School
+                        </h6>
+                        <p>A place for excellence in education and character development.</p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Services</h6>
+                        <p><a href="#!" class="text-reset">Academic Programs</a></p>
+                        <p><a href="#!" class="text-reset">Extracurricular Activities</a></p>
+                        <p><a href="#!" class="text-reset">Sports and Athletics</a></p>
+                        <p><a href="#!" class="text-reset">Counseling Services</a></p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
+                        <p><a href="#!" class="text-reset">Admissions</a></p>
+                        <p><a href="#!" class="text-reset">Events</a></p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Contact -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Addis Ababa, Ethiopia, Mesquel Square</p>
+                        <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone me-3"></i> +251 11 551 0868</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 St. Joseph School. All rights reserved.
+        </div>
+    </footer>
+
+    <% if(mess){ %>
+    <script>
+        alert('<%= mess %>');
+    </script>    
+    <% } %>
+
+</body>
+</html>

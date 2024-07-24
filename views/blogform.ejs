@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saint Joseph School</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #customcarousel{
+            position: relative;
+            border-radius: 20px;
+            margin-left: 50%;
+            translate: -50% 0;
+            max-width: 98%;
+        }
+        #customcarousel::after{
+            position: absolute;
+            content: '';
+            top: 0%;
+            left: 0%;
+            background: rgba(0, 0, 0, 0.522);
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and (max-width: 700px) {
+            #customcarousel{
+            position: relative;
+            width: 100%;
+            border-radius: 0;
+            margin-top: 90px!important;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top bg-danger p-0 navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/index"><img id="MDB-logo" src="./assets/logo.jpg" width="60px"
+                        height="60px" style="border-radius: 50%;" alt="MDB Logo" draggable="false" height="30" /></a>
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto align-items-center text-light">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-light" href="/index"><i
+                                    class="fas fa-home pe-2"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-primary active" href="/blog"><i
+                                    class="fas fa-blog pe-2"></i>Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-light" href="aboutUs"><i
+                                    class="fas fa-info-circle pe-2"></i>About
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 text-light" href="./contactUs"><i
+                                    class="fas fa-envelope pe-2"></i>Contact
+                                Us</a>
+                        </li>
+                        <!--  <li class="nav-item ms-3">
+                    <a class="btn btn-black btn-rounded rounded-pill bg-primary text-light" href="#!">Be a Member</a>
+                </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <% if(message){ %>
+        <div class="card alert alert-danger">
+                <p><%= message %></p>
+        </div>
+    <% } %>
+      <div class="container-sm-fluid container mb-5" style="margin-top: 95px;" action="/post">
+        <form action="/post" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label h3">Title</label>
+                <input type="text" class="form-control" name="title" id="" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label h3">Sub-Title</label>
+                <input type="text" class="form-control" name="subtitle" id="" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label h3">Content</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="content" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label h3">Related Image</label>
+                <input type="file" name="file" class="form-control" id="" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label h3">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Post">
+        </form>        
+      </div>
+      
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-danger text-light py-2">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fa-solid fa-school"></i> St. Joseph School
+                            </h6>
+                            <p>A place for excellence in education and character development.</p>
+                        </div>
+                        <!-- Grid column -->
+    
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Services
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Academic Programs</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Extracurricular Activities</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Sports and Athletics</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Counseling Services</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+    
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful Links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Admissions</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Events</a>
+                            </p>
+    
+                        </div>
+                        <!-- Grid column -->
+    
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Contact -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Addis Ababa, Ethiopia, Mesquel Square</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> +251 11 551 0868</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+    
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 St. Joseph School. All rights reserved.
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <% if(uploaded === false){ %>
+            <script>
+                alert('Password Incorrect')
+            </script>
+        <% } %>
+    
+    </body>
+    </html>
